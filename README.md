@@ -33,8 +33,8 @@ O sistema de backup realiza as seguintes operações:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/postgres-backup.git
-cd postgres-backup
+git clone https://github.com/nathancarrilho/db_backup.git
+cd db_backup
 ```
 
 2. Torne os scripts executáveis:
