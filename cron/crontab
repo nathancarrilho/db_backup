@@ -1,0 +1,11 @@
+# Executar backup todos os dias às 3:00 da manhã (ou conforme definido no .env)
+0 3 * * * /app/backup.sh
+
+# Verificar certificados SSL para renovação semanalmente (domingo às 2:00)
+0 2 * * 0 /app/cert-renew.sh
+
+# Limpar logs a cada 15 dias
+0 4 */15 * * find /app/logs -type f -name "*.log" -mtime +15 -exec rm {} \;
+
+# Manter arquivo de log das tarefas cron
+*/30 * * * * echo "Cron verificação: $(date)" >> /app/logs/cron.log 2>&1
