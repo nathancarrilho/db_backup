@@ -77,6 +77,9 @@ ENCRYPTION_KEY=$(openssl rand -base64 32)
 EOF
 ```
 
+### Usando o Vault
+TODO
+
 ## Uso
 
 ### Verificar Status dos Contêineres
